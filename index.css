@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  color: #e6e9f2;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(96, 80, 220, 0.28), transparent 32%),
+    radial-gradient(circle at 88% 0%, rgba(22, 185, 214, 0.2), transparent 28%),
+    linear-gradient(145deg, #060816 0%, #090b1f 45%, #080d1f 100%);
+  min-height: 100vh;
+}
+
+@keyframes heartPop {
+  0% {
+    transform: scale(1);
+  }
+  55% {
+    transform: scale(1.18);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-pop {
+  animation: heartPop 220ms ease-out;
+}
